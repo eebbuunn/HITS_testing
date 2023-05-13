@@ -6,12 +6,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def show_form():
-    return "<html><head><title></title></head>" \
+    return "<html><head><title>Testing</title></head>" \
            "<body>" \
            "<form action='/result' method=POST>" \
            "<label for='data'>Input numbers separated by <b>', '</b> (comma + space)</label><br />" \
            "<input name='data' id='data' autofocus='True'></input><br />" \
-           "<input type='submit' />" \
+           "<input id='go' type='submit' />" \
            "</form>" \
            "</body></html>"
 
